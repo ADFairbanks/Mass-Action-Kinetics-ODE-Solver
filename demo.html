@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Mass Action Kinetics ODE Solver Sample Demo</title>
+<script src="mak_ode_solver.js"></script>
+</head>
+<body>
+<p>
+This is a demonstration of a solver for an ODE with the following equation set:
+</p>
+<p>
+<image src="mak_demo.png">
+</p>
+<p>Initial state:</p>
+<p>[A] = <input type="number" id="A_input" value = 100 /><p>
+<p>[B] = <input type="number" id="B_input" value = 0 /><p>
+<p>[C] = <input type="number" id="C_input" value = 0 /><p>
+<p>[D] = <input type="number" id="D_input" value = 0 /><p>
+<p>k_a = <input type="number" id="ka_input" value = 0.2 /></p>
+<p>k_b = <input type="number" id="kb_input" value = 10 /></p>
+<p>k_crev = <input type="number" id="kcrev_input" value = 5 /></p>
+<p>k_cfwd = <input type="number" id="kcfwd_input" value = 0.5 /></p>
+<p>Time = <input type="number" id="time_input" value = 10 /></p>
+<p><input type="button" id="go_button" value="Go" onclick="demo()"></p>
+<p>
+Final state:
+<div id="outdiv"></div>
+</p>
+</body>
+</html>
